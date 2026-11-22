@@ -13,7 +13,7 @@ COPY packages/shared/package.json packages/shared/
 COPY packages/server/package.json packages/server/
 
 # bun.lock also lists the (absent) mobile workspace; Bun skips it with a note.
-RUN bun install --production
+RUN bun install --frozen-lockfile --production
 
 # ---------------------------------------------------------------------------
 # Runtime
