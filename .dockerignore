@@ -1,0 +1,23 @@
+# Git / tooling
+.git
+.gitignore
+.github
+
+# Dependencies and build output
+**/node_modules
+**/dist
+**/.expo
+**/*.log
+
+# Secrets (pass these as runtime env vars instead)
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Local-only files, not needed to build the server image
+test/
+test-two-players.ts
+appdesign/
+packages/mobile/
+README.md
