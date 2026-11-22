@@ -36,7 +36,7 @@ bun run build:web    # export the web client once
 bun run start        # serve everything at http://localhost:3001
 ```
 
-Open **two browser tabs** of `http://localhost:3001`, create a profile in each, pick a game, and both players will match each other.
+Open **two browser tabs** of `http://localhost:3001`, create a profile in each, pick a game, and both players will match each other. The client connects to the hosted server at `https://ushumusu.onrender.com` by default — for fully local play, build with `EXPO_PUBLIC_SERVER_URL=http://localhost:3001 bun run build:web`.
 
 To play from phones on the same Wi-Fi, point the app's Settings → *Address* at your machine's LAN URL (e.g. `http://192.168.1.20:3001`) — both devices must enter the same pairing passphrase (default `tether-duo-secret`, override with `PAIRING_SECRET`).
 
@@ -55,7 +55,7 @@ bun run typecheck    # tsc across all three packages
 bun run smoke        # end-to-end two-player match over sockets (server must be running)
 ```
 
-The Expo dev bundler on :8081 proxies nothing — the client defaults to the API on :3001 and you can override any deploy with `EXPO_PUBLIC_SERVER_URL` at build time.
+The Expo dev bundler on :8081 proxies nothing — the client defaults to the hosted server at `https://ushumusu.onrender.com`. Override it at build time with `EXPO_PUBLIC_SERVER_URL` (e.g. `http://localhost:3001` for local play) or per device via Settings → Address.
 
 `appdesign/` holds the design system (`warm_companion_minimalism/DESIGN.md`) and HTML mockups for every screen the client implements.
 

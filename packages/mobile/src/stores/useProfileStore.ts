@@ -1,42 +1,25 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { PlayerProfile, AVATAR_PRESETS } from '@tether/shared';
-import { Platform } from 'react-native';
 
 const PROFILE_KEY = '@tether_profile';
 const SERVER_URL_KEY = '@tether_server_url';
 const PAIRING_SECRET_KEY = '@tether_pairing_secret';
 const SESSION_TOKEN_KEY = '@tether_session_token';
 
-import Constants from 'expo-constants';
-
 /**
  * Default game-server address.
  *
- * - EXPO_PUBLIC_SERVER_URL always wins (set at build time, e.g. for a hosted deploy).
- * - Web build served BY the game server → same origin. Running under a dev
- *   bundler (Metro/expo start) → the local API on :3001 instead of the bundler port.
- * - Native (Expo Go / dev client) → the LAN host that serves the bundle.
- * - Anything else → localhost, which the Settings screen lets you override.
+ * - EXPO_PUBLIC_SERVER_URL always wins (set at build time, or in a local .env).
+ * - Otherwise the client connects to the hosted server.
+ * - Settings → Address still lets each device override this at runtime.
  */
+const HOSTED_SERVER_URL = 'https://ushumusu.onrender.com';
+
 const getDefaultServerUrl = (): string => {
   const envUrl = process.env.EXPO_PUBLIC_SERVER_URL;
   if (envUrl) return envUrl.trim().replace(/\/+$/, '');
-
-  if (Platform.OS === 'web' && typeof window !== 'undefined' && window.location?.origin) {
-    const { protocol, hostname, port } = window.location;
-    const isDevBundler = !port || ['8081', '19000', '19001', '19002', '19006'].includes(port);
-    if (isDevBundler) return `${protocol}//${hostname || 'localhost'}:3001`;
-    return window.location.origin;
-  }
-
-  const hostUri = (Constants as any).expoConfig?.hostUri ?? '';
-  const lanHost = typeof hostUri === 'string' ? hostUri.split(':')[0] : '';
-  if (lanHost && /^\d+\.\d+\.\d+\.\d+$/.test(lanHost) && lanHost !== '127.0.0.1') {
-    return `http://${lanHost}:3001`;
-  }
-
-  return 'http://localhost:3001';
+  return HOSTED_SERVER_URL;
 };
 
 const DEFAULT_SERVER_URL = getDefaultServerUrl();
