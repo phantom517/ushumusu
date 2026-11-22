@@ -52,7 +52,7 @@ export default function LobbyScreen() {
 
   return (
     <View style={styles.screen}>
-      <Header title="Tether" subtitle="Your cozy corner" showBack onBack={handleLeave} />
+      <Header title="musu" subtitle="Your cozy corner" showBack onBack={handleLeave} />
 
       <ScrollView
         contentContainerStyle={[

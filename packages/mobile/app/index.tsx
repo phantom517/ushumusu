@@ -19,7 +19,7 @@ export default function IndexScreen() {
             <MaterialIcons name="favorite" size={34} color="#FFFFFF" />
           </View>
         </Pulse>
-        <Text style={[Typography.headlineItalic, styles.wordmark]}>Tether</Text>
+        <Text style={[Typography.headlineItalic, styles.wordmark]}>musu</Text>
       </View>
     );
   }

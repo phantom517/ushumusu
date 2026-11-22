@@ -77,7 +77,7 @@ export default function RootLayout() {
                 <MaterialIcons name="favorite" size={30} color="#FFFFFF" />
               </View>
             </Pulse>
-            <Text style={[Typography.headlineItalic, styles.loaderText]}>Tether</Text>
+            <Text style={[Typography.headlineItalic, styles.loaderText]}>musu</Text>
             <Text style={[Typography.bodySm, styles.loaderSub]}>warming things up…</Text>
           </View>
         )}
