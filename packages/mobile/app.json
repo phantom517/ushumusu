@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Tether",
-    "slug": "tether-duo",
+    "name": "musu",
+    "slug": "musu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ansurijal.musu",
       "adaptiveIcon": {
         "backgroundColor": "#FFF9F4"
       }
@@ -22,6 +23,17 @@
     "plugins": [
       "expo-router",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "521975dc-d6b1-4eeb-8a69-354f89e2c02a"
+      }
+    },
+    "owner": "ansurijal"
   }
 }
