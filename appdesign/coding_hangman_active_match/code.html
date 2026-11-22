@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "on-background": "#171c23", "primary-fixed": "#ffdbd0", "surface-container": "#eaeef8", "tertiary-fixed": "#ede1d1", "on-secondary-fixed": "#00210e", "on-surface-variant": "#55433d", "surface-bright": "#f8f9ff", "background": "#f8f9ff", "inverse-surface": "#2c3138", "inverse-primary": "#ffb59e", "surface-container-highest": "#dee2ec", "on-secondary-fixed-variant": "#1e5031", "on-surface": "#171c23", "outline": "#88726c", "on-tertiary-fixed-variant": "#4d463a", "primary-fixed-dim": "#ffb59e", "error": "#ba1a1a", "outline-variant": "#dbc1b9", "error-container": "#ffdad6", "surface-container-high": "#e4e8f2", "surface-dim": "#d6dae4", "on-error": "#ffffff", "on-tertiary-container": "#302a20", "on-primary-fixed": "#390b00", "surface-tint": "#99462a", "surface-container-lowest": "#ffffff", "on-secondary-container": "#3b6d4b", "tertiary": "#665d51", "secondary": "#376847", "inverse-on-surface": "#edf1fb", "tertiary-container": "#9b9083", "primary": "#99462a", "primary-container": "#d97757", "on-primary-container": "#541400", "surface": "#f8f9ff", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#7a2f15", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#9dd3aa", "surface-container-low": "#f0f4fd", "on-tertiary-fixed": "#211b11", "tertiary-fixed-dim": "#d1c5b6", "secondary-fixed": "#b9efc5", "secondary-container": "#b6edc2", "on-primary": "#ffffff", "surface-variant": "#dee2ec" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.25rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem" }, fontFamily: { "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go Back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><img alt="Tether Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEf8ek0mVSnty1EC4032NyMR0hYwEc4kxzWAl3f4-9r-pFC_WaGiKvpoAMUXFeQjx5pSKYaw98S0Tnx1KhL0zJH_wJiWzPVz25KotTUTWpq33k4x9gckQIxIWWFKDJtsNKKkEEBk6ib4xiprkNCIkki2sIdOd1NTRwOLCCJmEvaFY9minuGRbnas_KHMG3YR6Oev2OKC-FwaExKvWWm3wRoFP90I42LobOwQMvR4cq"/><div class="flex flex-col"><h1 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">Active Card Session</h1><span class="font-label-sm text-label-sm text-outline mt-0.5">Session Active</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low"><span class="inline-flex rounded-full h-2 w-2 bg-secondary"></span><span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">Maya synced</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf5zBPXAy6kuPdcPDCr-kpI6Lww27KQH-PMKRxV8t92f8Pqv6l_kTuINJ-a5UsWpu2sAIt_wNTlSdpKklio_an3XWAjsV2mkQQXUiXgKR75aSU9WGch2xeOJCHurdd7ikpMPA8tiYDMgDwjTPqsO45ArHryP3nHfAYIFVcH0s9u8Wojhrvb4vwpLcy3t-u85vLq_6wzFWdk3uIn-FIJEf1OtGnE0nLrocagNbyM5o"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<div class="px-margin pt-2 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex rounded-full h-2.5 w-2.5 bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface">Your Turn to Inquire</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px] text-tertiary">hourglass_bottom</span>
+<span class="font-semibold" id="turn-timer">0:38</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Phase 1: Letter Inquiries</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">7 of 10 inquiries taken</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">lock_open</span>
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Maya's Hidden Word</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">6 Letters</span>
+</div>
+<div class="grid grid-cols-6 gap-2 w-full">
+<div class="aspect-square rounded-DEFAULT bg-surface-container-lowest flex flex-col items-center justify-center shadow-sm relative">
+<span class="w-4 h-0.5 bg-outline-variant rounded-full mt-auto mb-2"></span>
+</div>
+<div class="aspect-square rounded-DEFAULT bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-sm">
+<span class="font-headline-md text-headline-md font-semibold">E</span>
+</div>
+<div class="aspect-square rounded-DEFAULT bg-surface-container-lowest flex flex-col items-center justify-center shadow-sm relative">
+<span class="w-4 h-0.5 bg-outline-variant rounded-full mt-auto mb-2"></span>
+</div>
+<div class="aspect-square rounded-DEFAULT bg-surface-container-lowest flex flex-col items-center justify-center shadow-sm relative">
+<span class="w-4 h-0.5 bg-outline-variant rounded-full mt-auto mb-2"></span>
+</div>
+<div class="aspect-square rounded-DEFAULT bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-sm">
+<span class="font-headline-md text-headline-md font-semibold">O</span>
+</div>
+<div class="aspect-square rounded-DEFAULT bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-sm">
+<span class="font-headline-md text-headline-md font-semibold">R</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">heart_broken</span>
+<span class="font-body-sm text-body-sm">Strikes: 1 / 5</span>
+</div>
+<span class="font-body-sm text-body-sm">3 of 6 revealed</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[16px]">visibility_off</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Your Secret Word</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary tracking-widest mt-1 filter blur-[6px] select-none transition-all duration-300" id="secret-word-display">
+          CYLINDER
+        </span>
+</div>
+<button class="px-space-md py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors active:scale-95" id="toggle-secret-btn">
+        Hold to Reveal
+      </button>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Phase 2 Evolution</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">70% Reached</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[70%]"></div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lightbulb</span>
+<span class="font-body-sm text-body-sm">3 more inquiries unlock 'Free-form Semantic Clues'</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Inquiry Ledger</span>
+<div class="flex flex-col gap-2 max-h-32 overflow-y-auto pr-1">
+<div class="flex items-start gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT text-on-surface">
+<img class="w-5 h-5 rounded-full object-cover mt-0.5" data-alt="Warm natural-light portrait of Maya smiling softly with textured linen and neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1d3tN9bSG8gss_5eEx3dFO-aR6XQn33CtTM-dzIi5anPqzDYx1axyELOOpOySm0X-JtM1zxvMDjn9BPygtT4WZAeKC-gmDEUw_sjcw5XMB_PRg5SnVEH_z1zKug_i9_JNvME9_mqe7jXzNN-WRKeRnVAkIEEfjqZniDDGZUz2jXf-afDaRMhBonDsa4HdCLtzIwcLpfOTtmA0iKtNU8KPN3JarHnQtFsXYKtP7_k"/>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold">Maya inquired 'R'</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Found 1 'R'</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT text-on-surface">
+<img class="w-5 h-5 rounded-full object-cover mt-0.5" data-alt="Portrait of Julian in soft daylight looking thoughtful, subtle terracotta background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwBvoq5XKsUaoVK4qJyogI72i3ZVo4-ekrOwVh0_s0LRjIMwTqWsPyKpqekzPRgslmXhKc7hipq8ffl86c5JqdwzrmdpBZSLcoVg9IoEzZLxHpFHuflZzIdt__dkvnz_2hw9z1LqtlQNnWjg6eWUVnA9Y-siKfXQOXPYNAcx3O3hel7rXgNxoQGrXUoO425D74FFuYoKuS7UyD4EUPge8M3BNbeYmDRassiqjnfAM"/>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold">You inquired 'A'</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Not found (Strike 1)</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT text-on-surface">
+<img class="w-5 h-5 rounded-full object-cover mt-0.5" data-alt="Close up warm portrait of Maya with organic earth-tone aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0t7VvVNHSTiZAUY-L4O47lJtmMUjEhEfSNGDQREOP9En5M_VKYGcu10nt-iYPXvODN7RmGzYKS3vzylmMo3q_ynOKxoPOamX1JZj5Bkkqim9zBwuk3VWobyoEdYKl313klCahXBHYNPOZzHxR7e49Dy3RrLx_xEi3zgyBlcga6UI0mA7dPeFX2C4qVb5oJeT98nzsMtWDXHWukPBhE977affAiFLUkSlETqn0SC0"/>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold">Maya inquired 'E'</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Found 1 'E'</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface">Select Letter to Inquire</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="selected-letter-badge">None Selected</span>
+</div>
+<div class="flex flex-col gap-1.5 w-full select-none" id="qwerty-board">
+<div class="flex justify-center gap-1">
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="Q">Q</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="W">W</button>
+<button class="w-8 h-10 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-title-md text-title-md flex items-center justify-center opacity-90 cursor-not-allowed" disabled="">E</button>
+<button class="w-8 h-10 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-title-md text-title-md flex items-center justify-center opacity-90 cursor-not-allowed" disabled="">R</button>
+<button class="w-8 h-10 rounded-DEFAULT bg-surface-container-highest text-outline line-through font-title-md text-title-md flex items-center justify-center opacity-60 cursor-not-allowed" disabled="">T</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="Y">Y</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="U">U</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="I">I</button>
+<button class="w-8 h-10 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-title-md text-title-md flex items-center justify-center opacity-90 cursor-not-allowed" disabled="">O</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="P">P</button>
+</div>
+<div class="flex justify-center gap-1">
+<button class="w-8 h-10 rounded-DEFAULT bg-surface-container-highest text-outline line-through font-title-md text-title-md flex items-center justify-center opacity-60 cursor-not-allowed" disabled="">A</button>
+<button class="w-8 h-10 rounded-DEFAULT bg-surface-container-highest text-outline line-through font-title-md text-title-md flex items-center justify-center opacity-60 cursor-not-allowed" disabled="">S</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="D">D</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="F">F</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="G">G</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="H">H</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="J">J</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="K">K</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="L">L</button>
+</div>
+<div class="flex justify-center gap-1">
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="Z">Z</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="X">X</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="C">C</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="V">V</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="B">B</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="N">N</button>
+<button class="letter-btn w-8 h-10 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center shadow-sm active:translate-y-0.5" data-letter="M">M</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2 opacity-50 cursor-not-allowed transition-all active:scale-[0.99]" disabled="" id="inquire-btn">
+<span class="material-symbols-outlined text-[20px]">search</span>
+<span>Submit Letter Inquiry</span>
+</button>
+<button class="w-full h-11 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-sm flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors active:scale-95" id="guess-word-btn">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology_alt</span>
+<span>Submit Full Word Guess</span>
+</button>
+</div>
+</div>
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden flex items-end justify-center" id="guess-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-t-xl p-space-lg flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">psychology_alt</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Deduce Word</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Caution: Incorrect full word guesses cost 2 strikes. Current pattern: <strong class="text-on-surface">_ E _ _ O R</strong>.
+      </p>
+<div class="bg-surface-container-low rounded-DEFAULT p-3">
+<input class="w-full bg-transparent font-headline-md text-headline-md tracking-widest text-on-surface placeholder:text-outline-variant uppercase outline-none text-center" maxlength="6" placeholder="TYPE 6-LETTER GUESS" type="text"/>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 h-12 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg" id="cancel-guess-btn">
+          Cancel
+        </button>
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg">
+          Confirm Guess
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let selectedLetter = null;
+    const badge = document.getElementById('selected-letter-badge');
+    const inquireBtn = document.getElementById('inquire-btn');
+    const buttons = document.querySelectorAll('.letter-btn');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        
+        selectedLetter = btn.getAttribute('data-letter');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary');
+
+        badge.textContent = 'Selected: ' + selectedLetter;
+        inquireBtn.removeAttribute('disabled');
+        inquireBtn.classList.remove('opacity-50', 'cursor-not-allowed', 'bg-primary-container');
+        inquireBtn.classList.add('bg-primary');
+      });
+    });
+
+    const secretDisplay = document.getElementById('secret-word-display');
+    const secretBtn = document.getElementById('toggle-secret-btn');
+
+    function revealSecret() {
+      secretDisplay.classList.remove('blur-[6px]');
+      secretBtn.textContent = 'Release to Hide';
+    }
+
+    function hideSecret() {
+      secretDisplay.classList.add('blur-[6px]');
+      secretBtn.textContent = 'Hold to Reveal';
+    }
+
+    secretBtn.addEventListener('mousedown', revealSecret);
+    secretBtn.addEventListener('mouseup', hideSecret);
+    secretBtn.addEventListener('mouseleave', hideSecret);
+    secretBtn.addEventListener('touchstart', (e) => { e.preventDefault(); revealSecret(); });
+    secretBtn.addEventListener('touchend', hideSecret);
+
+    const modal = document.getElementById('guess-modal');
+    const openModalBtn = document.getElementById('guess-word-btn');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const cancelModalBtn = document.getElementById('cancel-guess-btn');
+
+    openModalBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+    closeModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    cancelModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
+
+    let seconds = 38;
+    const timerElem = document.getElementById('turn-timer');
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+        timerElem.textContent = '0:' + (seconds < 10 ? '0' : '') + seconds;
+      }
+    }, 1000);
+  })();
+</script></main></body></html>

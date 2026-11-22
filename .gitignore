@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Builds
+packages/*/dist/
+packages/mobile/web-build/
+.expo/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS / editor noise
+.DS_Store
+*.log
+
+# Local Expo scratch app (its own git repo)
+/test/
